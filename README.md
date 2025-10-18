@@ -2,8 +2,10 @@
 ## Выполнение тестового задания для ASPEX
 Для выполнения был развернут локальный сервер mssql в докере 
 
+```
 docker pull mcr.microsoft.com/mssql/server:2025-latest - затянул образ
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=*********"  -p 1433:1433 --name sql --hostname sql -d mcr.microsoft.com/mssql/server:2025-latest - запустил контейнер
+```
 
 Подключился через DBeaver 
 В репозиторий прикрепляю SQL скрипты выполнения заданий
